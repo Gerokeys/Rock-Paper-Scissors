@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    background-color: rgb(8, 8, 8);
+    color: whitesmoke;
+}
+
+section{
+    max-height: 100vh;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.score p{
+    text-align: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.intro button,
+.options button{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 30px;
+    border: 2px solid saddlebrown;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.intro button:hover,
+.options button:hover{
+    background-color: saddlebrown;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.match {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
+}
+
+.winner{
+    color: saddlebrown;
+    text-align: center;
+}
+
+.player-hand{
+    transform: rotateY(180deg);
+}
+
+.hands,
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+div.fadeOut{
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.fadeIn{
+    pointer-events: all;
+    opacity: 1;
+}
